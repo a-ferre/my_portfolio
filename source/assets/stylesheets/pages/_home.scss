@@ -78,7 +78,7 @@ a:hover {
 }
 
 .container .last.card {
-  right: 335px;
+  // right: 335px;
   position: relative;
   cursor: pointer;
   border: none;
@@ -219,6 +219,10 @@ a:hover {
 //   .page-frame-body {
 //     grid-template-columns: 1fr 1fr 1fr 1fr;
 //   }
+// }
+
+// .page-frame-footer {
+//   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 // }
 
 
