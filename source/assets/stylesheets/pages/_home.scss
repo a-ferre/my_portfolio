@@ -10,11 +10,17 @@ h1 {
 
 h3 {
   text-align: center;
+  margin: 0;
 }
 
-.title-container {
-  margin: 100px;
+.title-container  {
+  margin: 170px 0;
+  span {
+  display: inline-block;
+  }
 }
+
+
 
 .title {
   text-align: center;
@@ -70,14 +76,15 @@ a:hover {
   padding: 10px;
 }
 
-.container .card{
+.container .card-portfolio{
   position: relative;
   cursor: pointer;
   border: none;
   border-radius: 50px;
+  height: 315px;
 }
 
-.container .last.card {
+.container .card-portfolio {
   // right: 335px;
   position: relative;
   cursor: pointer;
@@ -86,13 +93,13 @@ a:hover {
   font-style: oblique;
 }
 
-.container .card .face{
+.container .card-portfolio .face{
   width: 300px;
   height: 200px;
   transition: 1s;
 }
 
-.container .card .face.face1{
+.container .card-portfolio .face.face1{
   position: relative;
   background: #333;
   display: flex;
@@ -103,25 +110,25 @@ a:hover {
   border-radius: 5%;
 }
 
-.container .card:hover .face.face1{
+.container .card-portfolio:hover .face.face1{
   background: #ff0057;
   transform: translateY(0);
 }
 
-.container .card .face.face1 .content{
-  opacity: 0.2;
+.container .card-portfolio .face.face1 .content{
+  opacity: 0.5;
   transition: 0.5s;
 }
 
-.container .card:hover .face.face1 .content{
+.container .card-portfolio:hover .face.face1 .content{
   opacity: 1;
 }
 
-.container .card .face.face1 .content img{
+.container .card-portfolio .face.face1 .content img{
   max-width: 100px;
 }
 
-.container .card .face.face1 .content h3{
+.container .card-portfolio .face.face1 .content h3{
     // margin: 10px 0 0;
   padding: 0;
   color: #fff;
@@ -129,9 +136,9 @@ a:hover {
   font-size: 1.2em;
 }
 
-.container .card .face.face2{
+.container .card-portfolio .face.face2{
   position: relative;
-  background: #fff;
+  // background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,16 +149,16 @@ a:hover {
   border-radius: 5%;
 }
 
-.container .card:hover .face.face2{
+.container .card-portfolio:hover .face.face2{
   transform: translateY(0);
 }
 
-.container .card .face.face2 .content p{
+.container .card-portfolio .face.face2 .content p{
   margin: 0;
   padding: 0;
 }
 
-.container .card .face.face2 .content a{
+.container .card-portfolio .face.face2 .content a{
   margin: 15px 0 0;
   display:  inline-block;
   text-decoration: none;
@@ -161,7 +168,7 @@ a:hover {
   border: 1px solid #ff0057;
 }
 
-.container .card .face.face2 .content a:hover{
+.container .card-portfolio .face.face2 .content a:hover{
   background: #ff0057;
   color: #fff;
 }
@@ -231,19 +238,29 @@ a:hover {
   .page-frame-body {
     grid-template-columns: 1fr;
   }
-  // .card-category {
+  // .card-portfolio-category {
   //   width: 100%;
   // }
   // .card-trip {
   //   width: 100% !important;
   // }
+  .container {
+    align-items: center;
+    flex-direction: column;
+    width: unset;
+  }
 }
 
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .page-frame-body {
     grid-template-columns: 1fr;
+  }
+  .container {
+    align-items: center;
+    flex-direction: column;
+    width: unset;
   }
 }
 
