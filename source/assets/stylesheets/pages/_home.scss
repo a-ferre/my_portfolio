@@ -20,8 +20,6 @@ h3 {
   }
 }
 
-
-
 .title {
   text-align: center;
   padding: 40px;
@@ -193,57 +191,12 @@ a:hover {
   padding: 16px;
 }
 
-// // Smallest device
-// @media (min-width: 100px) and (max-width: 575px) {
-//   .page-frame-body {
-//     grid-template-columns: 1fr;
-//   }
-// }
-
-//   // Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) {
-//  .page-frame-body {
-//    grid-template-columns: 1fr;
-//   }
-// }
-
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
-//  .page-frame-body {
-//    grid-template-columns: 1fr 1fr;
-//   }
-// }
-
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) {
-//   .page-frame-body {
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//   }
-// }
-
-// // Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {
-//   .page-frame-body {
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//   }
-// }
-
-// .page-frame-footer {
-//   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-// }
-
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .page-frame-body {
     grid-template-columns: 1fr;
   }
-  // .card-portfolio-category {
-  //   width: 100%;
-  // }
-  // .card-trip {
-  //   width: 100% !important;
-  // }
   .container {
     align-items: center;
     flex-direction: column;
