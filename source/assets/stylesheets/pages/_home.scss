@@ -281,7 +281,7 @@ animation:rainbow 1s infinite;
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .page-frame-body {
     grid-template-columns: 1fr;
   }
@@ -289,13 +289,6 @@ animation:rainbow 1s infinite;
     align-items: center;
     flex-direction: column;
     width: unset;
-  }
-}
-
-// Media devices horizontal
-@media (min-width: 812px) {
-  .page-frame-body {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
