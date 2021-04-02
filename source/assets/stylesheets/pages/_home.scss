@@ -46,7 +46,7 @@ a:hover {
   top: 20px;
   right: 20px;
   position: absolute;
-  position: fixed;
+  // position: fixed;
   font-size: 30px;
 }
 
@@ -239,7 +239,7 @@ animation:rainbow 1s infinite;
 }
 
 .last-line strong {
-  animation: puff-out-hor 20s ease-in-out infinite alternate-reverse both;
+  animation: puff-out-hor 12s ease-in-out infinite alternate-reverse both;
 }
 
 @keyframes puff-out-hor {
@@ -284,6 +284,18 @@ animation:rainbow 1s infinite;
 @media (min-width: 768px) {
   .page-frame-body {
     grid-template-columns: 1fr;
+  }
+  .container {
+    align-items: center;
+    flex-direction: column;
+    width: unset;
+  }
+}
+
+// Media devices horizontal
+@media (min-width: 812px) {
+  .page-frame-body {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
