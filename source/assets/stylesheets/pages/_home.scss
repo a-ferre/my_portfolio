@@ -293,9 +293,14 @@ animation:rainbow 1s infinite;
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1100px) {
   .page-frame-body {
     grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    align-items: center;
+    flex-direction: column;
+    width: unset;
   }
 }
 
